@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Questionnaire</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="questionnaire-card" aria-labelledby="questionnaire-title">
+            <header class="card-header">
+                <p class="eyebrow">Survey Engine</p>
+                <h1 id="questionnaire-title">Dynamic Questionnaire</h1>
+                <p class="subtitle">Questions are loaded from <code>questions.json</code>. Responses are saved locally and can be exported to file.</p>
+
+                <div class="header-controls" aria-label="Questionnaire controls">
+                    <label class="quiz-mode-toggle" for="quizModeToggle">
+                        <input type="checkbox" id="quizModeToggle">
+                        <span>Quiz Mode (hide admin operations)</span>
+                    </label>
+
+                    <button type="button" id="readAloudBtn" class="btn btn-secondary">Read This Question Aloud</button>
+                    <button type="button" id="stopReadAloudBtn" class="btn btn-ghost">Stop Reading</button>
+                </div>
+            </header>
+
+            <div class="progress-meta" aria-live="polite">
+                <span id="progressLabel">0% Complete</span>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-label="Questionnaire completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <div class="progress" id="progressFill"></div>
+            </div>
+
+            <form id="questionnaireForm" novalidate>
+                <!-- Dynamic questions render here -->
+            </form>
+
+            <section class="results" id="results" aria-live="polite" hidden></section>
+
+            <section class="storage-panel" id="storagePanel" aria-labelledby="storage-title">
+                <h2 id="storage-title">Saved Responses</h2>
+                <p id="storageSummary">Loading response history...</p>
+
+                <div class="controls-grid">
+                    <button type="button" id="saveDraftBtn" class="btn btn-secondary">Save Draft</button>
+                    <button type="button" id="exportLatestBtn" class="btn btn-secondary">Export Latest (.json)</button>
+                    <button type="button" id="exportAllBtn" class="btn btn-secondary">Export All (.json)</button>
+                    <button type="button" id="exportAllJsBtn" class="btn btn-secondary">Export All (.js)</button>
+                    <button type="button" id="importResponsesBtn" class="btn btn-secondary">Import Responses (.json)</button>
+                    <button type="button" id="clearDraftBtn" class="btn btn-ghost">Clear Draft</button>
+                    <button type="button" id="clearResponsesBtn" class="btn btn-danger">Clear Saved Responses</button>
+                </div>
+
+                <input type="file" id="importResponsesInput" accept="application/json,.json" hidden>
+
+                <div class="responses-table-wrap">
+                    <table class="responses-table" aria-label="Submission history table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Saved At</th>
+                                <th scope="col">Answered Fields</th>
+                                <th scope="col">Preview</th>
+                            </tr>
+                        </thead>
+                        <tbody id="responsesTableBody">
+                            <tr>
+                                <td colspan="4">No submissions yet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+    <script src="./t.js"></script>
+</body>
+</html>

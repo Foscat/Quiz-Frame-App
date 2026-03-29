@@ -1,0 +1,241 @@
+[
+    {
+      "type": "text",
+      "question": "Who is asking these questions today?",
+      "name": "askedBy",
+      "required": true,
+      "maxLength": 60,
+      "placeholder": "e.g. Kyle, Mom, Dad, Therapist"
+    },
+    {
+      "type": "date",
+      "question": "What is today's date?",
+      "name": "sessionDate",
+      "required": true
+    },
+    {
+      "type": "textarea",
+      "question": "Any notes about how the child seemed before answering? (mood, energy, setting)",
+      "name": "notesAboutMood",
+      "rows": 3,
+      "maxLength": 400,
+      "placeholder": "e.g. seemed tired, just got home from school, was excited"
+    },
+    {
+      "type": "text",
+      "question": "What is your name?",
+      "name": "childName",
+      "required": true,
+      "minLength": 2,
+      "maxLength": 40,
+      "placeholder": "Type name here"
+    },
+    {
+      "type": "radio",
+      "question": "How are you feeling right now?",
+      "name": "feelingNow",
+      "required": true,
+      "emojiStyle": true,
+      "options": ["😊 Happy", "😌 Calm", "🤪 Silly", "😢 Sad", "😠 Mad", "😟 Worried", "😴 Tired"]
+    },
+    {
+      "type": "radio",
+      "question": "Was today a good day, okay day, or hard day?",
+      "name": "dayType",
+      "required": true,
+      "emojiStyle": true,
+      "options": ["🌟 Good day", "🌤️ Okay day", "⛈️ Hard day"]
+    },
+    {
+      "type": "radio",
+      "question": "When you think about yourself, which sounds most right?",
+      "name": "selfView",
+      "required": true,
+      "options": [
+        "I like who I am",
+        "I like some things about me",
+        "I am not sure",
+        "I do not like much about me"
+      ]
+    },
+    {
+      "type": "checkbox",
+      "question": "Which words feel like you?",
+      "name": "selfWords",
+      "options": [
+        "Kind",
+        "Funny",
+        "Smart",
+        "Brave",
+        "Helpful",
+        "Creative",
+        "Shy",
+        "Strong",
+        "Loving"
+      ]
+    },
+    {
+      "type": "radio",
+      "question": "Do you feel safe most days?",
+      "name": "feelSafe",
+      "required": true,
+      "emojiStyle": true,
+      "options": ["✅ Yes", "🤔 Sometimes", "❌ Not much"]
+    },
+    {
+      "type": "radio",
+      "question": "Do you think most days are fun or hard?",
+      "name": "worldFeels",
+      "required": true,
+      "emojiStyle": true,
+      "options": ["🎉 Mostly fun", "⚖️ A little of both", "😓 Mostly hard"]
+    },
+    {
+      "type": "radio",
+      "question": "How do you feel when you are with Kyle?",
+      "name": "feelWithKyle",
+      "required": true,
+      "emojiStyle": true,
+      "options": ["😊 Happy", "🛡️ Safe", "❤️ Loved", "😌 Calm", "🤪 Funny", "😠 Mad", "😟 Worried", "😢 Sad"]
+    },
+    {
+      "type": "checkbox",
+      "question": "What do you like doing with Kyle?",
+      "name": "likeWithKyle",
+      "options": [
+        "Playing games",
+        "Talking",
+        "Watching shows",
+        "Going outside",
+        "Learning things",
+        "Eating together",
+        "Being silly",
+        "Getting help"
+      ]
+    },
+    {
+      "type": "radio",
+      "question": "Do you want more time with Kyle?",
+      "name": "moreTimeWithKyle",
+      "required": true,
+      "emojiStyle": true,
+      "options": ["🙌 Yes", "🤷 Maybe", "🙅 No"]
+    },
+    {
+      "type": "textarea",
+      "question": "What is your favorite thing to do with Kyle?",
+      "name": "favoriteThingWithKyle",
+      "rows": 3,
+      "maxLength": 200,
+      "placeholder": "Short answer"
+    },
+    {
+      "type": "radio",
+      "question": "How do you feel when you are with your mom?",
+      "name": "feelWithMom",
+      "required": true,
+      "emojiStyle": true,
+      "options": ["😊 Happy", "🛡️ Safe", "❤️ Loved", "😌 Calm", "🤪 Funny", "😠 Mad", "😟 Worried", "😢 Sad"]
+    },
+    {
+      "type": "checkbox",
+      "question": "What do you like doing with your mom?",
+      "name": "likeWithMom",
+      "options": [
+        "Talking",
+        "Playing",
+        "Going places",
+        "Watching things",
+        "Eating together",
+        "Getting hugs",
+        "Learning things",
+        "Resting"
+      ]
+    },
+    {
+      "type": "radio",
+      "question": "How do you feel when you are with your dad?",
+      "name": "feelWithDad",
+      "required": true,
+      "emojiStyle": true,
+      "options": ["😊 Happy", "🛡️ Safe", "❤️ Loved", "😌 Calm", "🤪 Funny", "😠 Mad", "😟 Worried", "😢 Sad"]
+    },
+    {
+      "type": "checkbox",
+      "question": "What do you like doing with your dad?",
+      "name": "likeWithDad",
+      "options": [
+        "Talking",
+        "Playing",
+        "Going places",
+        "Watching things",
+        "Eating together",
+        "Getting hugs",
+        "Learning things",
+        "Resting"
+      ]
+    },
+    {
+      "type": "checkbox",
+      "question": "What do you want more of?",
+      "name": "wantMoreOf",
+      "options": [
+        "More play time",
+        "More hugs",
+        "More quiet time",
+        "More time outside",
+        "More help",
+        "More family time",
+        "More sleep",
+        "More snacks"
+      ]
+    },
+    {
+      "type": "checkbox",
+      "question": "What do you not enjoy right now?",
+      "name": "dontEnjoy",
+      "options": [
+        "Too much yelling",
+        "Being rushed",
+        "Too many rules",
+        "Being alone",
+        "Loud noises",
+        "Bedtime",
+        "Getting in trouble",
+        "School work",
+        "Arguments"
+      ]
+    },
+    {
+      "type": "radio",
+      "question": "When you are upset, what helps most?",
+      "name": "upsetHelp",
+      "required": true,
+      "emojiStyle": true,
+      "options": [
+        "🤗 Hugs",
+        "💬 Talking",
+        "🤫 Quiet time",
+        "🎮 Playing",
+        "🎨 Drawing",
+        "🍎 Snacks",
+        "🧘 Being alone a little"
+      ]
+    },
+    {
+      "type": "textarea",
+      "question": "What is something you wish grown-ups understood about you?",
+      "name": "wishAdultsKnew",
+      "rows": 4,
+      "maxLength": 300,
+      "placeholder": "Short answer"
+    },
+    {
+      "type": "textarea",
+      "question": "Is there anything else you want to say?",
+      "name": "anythingElse",
+      "rows": 4,
+      "maxLength": 300,
+      "placeholder": "Anything else"
+    }
+  ]

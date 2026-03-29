@@ -1,0 +1,61 @@
+[
+    {
+        "id": 1,
+        "createdAt": "2026-03-20T10:14:33.000Z",
+        "answers": {
+            "askedBy": "Kyle",
+            "sessionDate": "2026-03-20",
+            "notesAboutMood": "Came home from school in a good mood. Had a snack first. Seemed relaxed and willing to talk.",
+            "childName": "Lily",
+            "feelingNow": "😊 Happy",
+            "dayType": "🌟 Good day",
+            "selfView": "I like who I am",
+            "selfWords": ["Kind", "Funny", "Creative", "Loving"],
+            "feelSafe": "✅ Yes",
+            "worldFeels": "🎉 Mostly fun",
+            "feelWithKyle": "❤️ Loved",
+            "likeWithKyle": ["Playing games", "Being silly", "Watching shows"],
+            "moreTimeWithKyle": "🙌 Yes",
+            "favoriteThingWithKyle": "Playing board games and making up silly voices",
+            "feelWithMom": "🛡️ Safe",
+            "likeWithMom": ["Getting hugs", "Talking", "Eating together"],
+            "feelWithDad": "😊 Happy",
+            "likeWithDad": ["Playing", "Going places", "Watching things"],
+            "wantMoreOf": ["More play time", "More family time", "More snacks"],
+            "dontEnjoy": ["Being rushed", "Loud noises"],
+            "upsetHelp": "🤗 Hugs",
+            "wishAdultsKnew": "Sometimes I just need a hug before I can talk about what is wrong.",
+            "anythingElse": ""
+        }
+    },
+    {
+        "id": 2,
+        "createdAt": "2026-03-25T16:30:19.000Z",
+        "answers": {
+            "askedBy": "Mom",
+            "sessionDate": "2026-03-25",
+            "notesAboutMood": "Had a rough day at school. Was quiet when he got home. Took about 20 minutes before he was ready to sit down.",
+            "childName": "Lily",
+            "feelingNow": "😟 Worried",
+            "dayType": "⛈️ Hard day",
+            "selfView": "I like some things about me",
+            "selfWords": ["Smart", "Shy", "Helpful"],
+            "feelSafe": "🤔 Sometimes",
+            "worldFeels": "⚖️ A little of both",
+            "feelWithKyle": "😌 Calm",
+            "likeWithKyle": ["Talking", "Learning things", "Getting help"],
+            "moreTimeWithKyle": "🙌 Yes",
+            "favoriteThingWithKyle": "When Kyle helps me with hard homework and does not get frustrated",
+            "feelWithMom": "❤️ Loved",
+            "likeWithMom": ["Getting hugs", "Resting", "Talking"],
+            "feelWithDad": "😌 Calm",
+            "likeWithDad": ["Watching things", "Resting"],
+            "wantMoreOf": ["More quiet time", "More hugs", "More help"],
+            "dontEnjoy": ["Too much yelling", "Arguments", "Being alone", "School work"],
+            "upsetHelp": "🤫 Quiet time",
+            "wishAdultsKnew": "When I get quiet it does not mean I am in trouble. It means I am trying to calm down.",
+            "anythingElse": "I like when everyone is calm at home. It helps me feel calm too."
+        }
+    }
+]
+
